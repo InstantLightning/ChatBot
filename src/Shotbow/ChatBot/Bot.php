@@ -407,7 +407,7 @@ class Shotbow_ChatBot_Bot
     }
     protected function command_arrow(Shotbow_Chatbot_User $sender, $arguments)
     {
-        $message = "Did you know Shotbow has it's own newsletter? Every Sunday a new weekly arrow is posted giving information about everything that has happened the week before, and possibly even a xp code! [url= https://shotbow.net/forum/threads/the-weekly-arrow-changes-from-the-week-of-january-9-2016.336970/] The Wekly Arrow! [/url] "
+        $message = "Did you know Shotbow has it's own newsletter? Every Sunday a new weekly arrow is posted giving information about everything that has happened the week before, and possibly even a xp code! [url= https://shotbow.net/forum/threads/the-weekly-arrow-changes-from-the-week-of-january-9-2016.336970/] The Wekly Arrow! [/url] ";
         $this->postMessage($message);
     }
 }
