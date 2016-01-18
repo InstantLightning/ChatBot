@@ -479,7 +479,7 @@ MySQL;
     }
     protected function command_Meow(Shotbow_ChatBot_User $sender, $args)
 {
-    if (!in_array($sender->getName()), ['InstantLightning' 'Zombry'])) {
+    if (!in_array($sender->getName()) ['InstantLightning', 'Zombry'])) {
         return;
     }
     if ($args[0] != 'desu') {
@@ -488,7 +488,7 @@ MySQL;
     $this->postMessage('Meow Desu Ne!'); }
     protected function command_Mew(Shotbow_ChatBot_User $sender, $arguments)
     { 
-        if(!in_array($sender->getName()), ['InstantLightning' 'Maggie' ])) {
+        if(!in_array($sender->getName()) ['InstantLightning' 'Maggie' ])) {
             return;
         }
         {
