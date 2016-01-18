@@ -143,6 +143,9 @@ MySQL;
                 'mcstatus' => [$this, 'command_mcstatus'],
                 'radio'    => [$this, 'command_radio'],
                 'arrow'    => [$this, 'command_arrow'],
+                'Meow'     => [$this, 'command_Meow']
+                'Mew'      => [$this, 'command_Mew']
+                'dj'       => [$this, 'command_dj']
             ];
         }
 
@@ -472,6 +475,30 @@ MySQL;
         }
         $message .= implode(', ', $usernames);
 
+        $this->postMessage($message);
+    }
+    protected function command_Meow(Shotbow_ChatBot_User $sender, $args)
+{
+    if (!in_array($sender->getName()), ['InstantLightning', 'Zombry'])) {
+        return;
+    }
+    if ($args[0] != 'desu') {
+        return;
+    }
+    $this->postMessage('Meow Desu Ne!'); }
+    protected function command_Mew(Shotbow_ChatBot_User $sender, $arguments)
+    { 
+        if(!in_array($sender->getName()), ['InstantLightning', 'Maggie' ])) {
+            return;
+        }
+        {
+            $message = "[url=http://www.catgifs.org/wp-content/uploads/2013/09/134_cutekitten_cat_gifs.gif] Mew! [/url]";
+            $this->postMessage($message);
+        }
+    }
+    protected function command_dj(Shotbow_Chatbot_User $sender, $arguments)
+    {
+        $message= "[url=https://www.dubtrack.fm/join/shotbow-dj] Come and join the party! [/url]";
         $this->postMessage($message);
     }
 }
