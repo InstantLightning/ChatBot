@@ -143,9 +143,9 @@ MySQL;
                 'mcstatus' => [$this, 'command_mcstatus'],
                 'radio'    => [$this, 'command_radio'],
                 'arrow'    => [$this, 'command_arrow'],
-                'Meow'     => [$this, 'command_Meow']
-                'Mew'      => [$this, 'command_Mew']
-                'dj'       => [$this, 'command_dj']
+                'Meow'     => [$this, 'command_Meow'],
+                'Mew'      => [$this, 'command_Mew'],
+                'dj'       => [$this, 'command_dj'],
             ];
         }
 
